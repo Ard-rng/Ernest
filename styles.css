@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414; /* Netflix Dark Background */
+    color: #e5e5e5; /* Netflix Light Gray Text */
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    background-image: url('pictop.png'); /* Add Background Image */
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Added subtle shadow behind the text */
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+nav {
+    background-color: #111; /* Dark Background for Netflix-Style Nav */
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e50914; /* Netflix Red Hover Effect */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 100px; /* Increased side margins */
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 1); /* Brighter Neon Red */
+}
+
+section h2 {
+    font-size: 28px;
+    color: #ffffff; /* Changed to White */
+    border-bottom: 2px solid #e50914;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.image-box {
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b3b3b3;
+    font-size: 18px;
+    border: 2px dashed #555;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 1); /* Brighter Neon Red */
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    color: #b3b3b3;
+}
